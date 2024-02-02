@@ -1,0 +1,23 @@
+[33mcommit 9de8b799a8677660f353c5e69b3519e595f16a68[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: vivox31 <vishalkalwani623@gmail.com>
+Date:   Fri Feb 2 16:17:42 2024 +0530
+
+    almost completed a web app except updating movies and lists and users and need to fix some small issues
+
+[33mcommit abf73c3e176a875a7d82242a2582a4aa1d356373[m
+Author: vivox31 <vishalkalwani623@gmail.com>
+Date:   Thu Jan 11 18:45:43 2024 +0530
+
+    completed  all the frontend work and moving forward for backend
+
+[33mcommit 986599ee06f50c77def9c0328657d06e866ce1e4[m
+Author: vivox31 <vishalkalwani623@gmail.com>
+Date:   Wed Jan 10 20:29:09 2024 +0530
+
+    created home page but still need to create slider
+
+[33mcommit f802372cfa5a76a54aee2f2e70c967a51a190192[m
+Author: vivox31 <vishalkalwani623@gmail.com>
+Date:   Sat Jan 6 17:09:28 2024 +0530
+
+    Initialize project using Create React App
