@@ -14,7 +14,7 @@ const Home = ({type}) => {
         const getRandomLists = async ()=>{
            try{
                 const res = await axios.get(
-                    `http://localhost:8800/api/list ${type ? '?type='+ type:""}${genre ? "&genre="+ genre:""}`,
+                    `https://netflix-1ibe.onrender.com/api/list ${type ? '?type='+ type:""}${genre ? "&genre="+ genre:""}`,
                     {headers : {token : "bearer " + JSON.parse(localStorage.getItem('user')).accesstoken}
                    
                 }

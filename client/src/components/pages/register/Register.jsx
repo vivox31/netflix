@@ -20,7 +20,7 @@ const Register = () => {
     setPassword(passwordref.current.value);
     setUsername(usernameRef.current.value);
     try{
-        const res = await axios.post("http://localhost:8800/api/auth/register", 
+        const res = await axios.post("https://netflix-1ibe.onrender.com/api/auth/register", 
         {username: username,
         email: email,
         password: Password});

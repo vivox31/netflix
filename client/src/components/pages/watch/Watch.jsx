@@ -16,7 +16,7 @@ const Watch = () => {
     let movieid = url[2];
     
     try {
-      const res = await axios.get(`http://localhost:8800/api/movie/find/${movieid}`, { headers: { token: "bearer " + JSON.parse(localStorage.getItem('user')).accesstoken } })
+      const res = await axios.get(`https://netflix-1ibe.onrender.com/api/movie/find/${movieid}`, { headers: { token: "bearer " + JSON.parse(localStorage.getItem('user')).accesstoken } })
       setMovie(res.data);
       // console.log(movie);
     } catch (error) {

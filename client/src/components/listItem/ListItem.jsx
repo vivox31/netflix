@@ -13,7 +13,7 @@ const ListItem = ({ index, item }) => {
   useEffect(() => {
     const getMovie = async () => {
       try {
-        const res = await axios.get("http://localhost:8800/api/movie/find/" + item,
+        const res = await axios.get("https://netflix-1ibe.onrender.com/api/movie/find/" + item,
           {
             headers: { token: "bearer " + JSON.parse(localStorage.getItem('user')).accesstoken }
           });
