@@ -18,7 +18,7 @@ const ListItem = ({ index, item }) => {
             headers: { token: "bearer " + JSON.parse(localStorage.getItem('user')).accesstoken }
           });
         setMovie(res.data);
-        console.log(res.data);
+        // console.log(res.data);
       } catch (err) {
         console.log(err);
       }

@@ -8,7 +8,8 @@ router.post('/register', async(req,res)=>{
     const newuser =  new User({
         username:req.body.username,
         email:req.body.email,
-        password: CryptoJS.AES.encrypt(req.body.password, process.env.SECRET_KEY).toString()
+        password: CryptoJS.AES.encrypt(req.body.password, process.env.SECRET_KEY).toString(),
+        isAdmin:(req.body.isAdmin)?req.body.isAdmin:false
     });
     try{
     await newuser.save()

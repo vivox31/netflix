@@ -2,6 +2,7 @@ import { React, useState, useEffect } from 'react'
 import './feature.scss'
 import { InfoOutlined, PlayArrow } from '@mui/icons-material'
 import axios from "axios";
+import { Link } from 'react-router-dom';
 
 const Feature = ({ type, setGenre }) => {
 
@@ -31,7 +32,7 @@ const Feature = ({ type, setGenre }) => {
                     <option >Genre</option>
                     <option value="adventure">adventure</option>
                     <option value="comedy">comedy</option>
-                    <option value="adventure">adventure</option>
+                    <option value="adventure">Action</option>
                     <option value="adventure">adventure</option>
                     <option value="adventure">adventure</option>
                     <option value="adventure">adventure</option>
@@ -43,10 +44,12 @@ const Feature = ({ type, setGenre }) => {
                 <img src={content.imgTitle} alt="" />
                 <span className="desc">{content.desc}</span>
                 <div className="buttons">
+                    <Link  style={{ textDecoration: 'none' }} to={{pathname:"/watch/" + content._id, state:{data:'vishal'}}}>
                     <button className="play">
                         <PlayArrow />
-                        <span>play</span>
+                        <span >play</span>
                     </button>
+                    </Link>
                     <button className="more">
                         <InfoOutlined />
                         <span>Info</span>

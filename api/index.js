@@ -8,7 +8,7 @@ const listRoute = require('./routes/lists');
 var cors = require('cors');
 
 
-
+const PORT = 8800 | process.env.PORT
 const app = express();
 dotenv.config();
 
@@ -21,7 +21,7 @@ mongoose.connect(process.env.MONGO_URL).then(()=>{
 ////////////////////////////////
 app.use(express.json());
 app.use(express.urlencoded());
-app.listen(8800, ()=>{
+app.listen(PORT, ()=>{
     console.log('server running on server : 8800')
 })
 
