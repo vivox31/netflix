@@ -10,7 +10,7 @@ const Feature = ({ type, setGenre }) => {
     useEffect(() => {
         const getRandomContent = async () => {
             try {
-                const res = await axios.get(`http://localhost:8800/api/movie/random?type=${type}`,
+                const res = await axios.get(`https://netflix-1ibe.onrender.com/api/movie/random?type=${type}`,
                     {
                         headers:
                             { token: "bearer " + JSON.parse(localStorage.getItem('user')).accesstoken }
