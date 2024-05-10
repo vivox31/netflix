@@ -6,7 +6,7 @@ import Register from './components/pages/register/Register'
 import Login from './components/pages/Login/Login'
 
 import { BrowserRouter, Route, Routes, Navigate, useNavigate } from "react-router-dom";
-    import {AuthContext} from './authContext/AuthContext'
+import {AuthContext} from './authContext/AuthContext'
 
 
 export default function App() {
@@ -26,9 +26,6 @@ export default function App() {
       </>) 
     }
   
-     
-
-
 
     </Routes>
     </BrowserRouter>
