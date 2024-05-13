@@ -16,7 +16,7 @@ const Feature = ({ type, setGenre }) => {
                             { token: "bearer " + JSON.parse(localStorage.getItem('user')).accesstoken }
                     });
                 setContent(res.data[0]);
-                console.log(content)
+                //console.log(content)
             } catch (error) {
                 console.log(error);
             }
@@ -33,7 +33,7 @@ const Feature = ({ type, setGenre }) => {
                     <option value="adventure">adventure</option>
                     <option value="comedy">comedy</option>
                     <option value="adventure">Action</option>
-                    <option value="adventure">adventure</option>
+                    <option value="Triller">Triller</option>
                     <option value="adventure">adventure</option>
                     <option value="adventure">adventure</option>
                     <option value="adventure">adventure</option>
