@@ -81,13 +81,7 @@ This project is a Netflix clone web application built using the MERN stack (Mong
 - Navigate to `http://localhost:3000` to view the client interface.
 - Navigate to `http://localhost:3000/admin` to access the admin interface.
 
-## Screenshots
 
-### Client Interface
-![Client Interface](screenshots/client.png)
-
-### Admin Interface
-![Admin Interface](screenshots/admin.png)
 
 ## Contributing
 
